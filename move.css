@@ -1,0 +1,102 @@
+.header {
+    background-color:#E3CCAE;
+    height: 200px;
+    width: 100%;
+    align-items: center;
+    position: fixed;
+    border-width: 3px;
+    border-color: #BBBBBB;
+    display: flex;
+    color: #000000;
+    font-size: 60px;
+    font-family: 'Poppins';
+}
+
+.logo img {
+    height: 150px;
+    width: 150px;
+    padding-left: 50px;
+}
+
+
+body{
+    margin: 0;
+}
+
+.title {
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.scroll {
+    padding-top: 250px;
+    overflow: scroll;
+}
+
+.wrapper {
+    margin: 0px;
+    width: 100%;
+    font-family: 'Poppins'; 
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.ColOne {
+    font-size: 30px;
+    width: 50%;
+    float: left;
+    text-align: center;
+    display: flex;
+}
+
+.ColTwo{
+    width: 50%;
+    font-size: 30px;
+    float: right;
+    text-align: center;
+}
+.profilepic {
+    width: 50%;
+    font-size: 20px;
+    float: left;
+    text-align: left;
+    justify-content: center;
+}
+
+.streak {
+    padding-top: 100px;
+    width: 50%;
+    font-size: 20px;
+    float: right;
+    text-align: left;
+   
+}
+
+.actress {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.actresstitle {
+    
+    font-size: 24px;
+    font-family: 'Poppins'; 
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.actress div {
+    margin: 10px;
+}
+
+.actress img {
+    width: 320px;
+    height: 220px;
+    object-fit: cover;
+}
+
+.profilepic {
+    text-align: center;
+}
+
