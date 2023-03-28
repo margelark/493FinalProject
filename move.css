@@ -31,15 +31,25 @@ body{
     padding-left: 50px;
 }
 
+.view {
+    float: right;
+    font-size: 20px;
+    padding-left: 650px;
+    text-decoration: underline;
+    color: #262A56;
+}
+
 .title {
     font-weight: bold;
     margin-left: 50px;
 }
 
 .scroll {
-    padding-top: 250px;
+    padding-top: 225px;
     overflow: scroll;
 }
+
+
 
 .wrapper {
     margin: 0px;
@@ -51,37 +61,76 @@ body{
 
 .ColOne {
     font-size: 30px;
-    width: 50%;
+    width: 40%;
     float: left;
-    text-align: center;
-    display: flex;
 }
 
 .ColTwo{
-    width: 50%;
+    width: 60%;
     font-size: 30px;
     float: right;
-    text-align: center;
+    text-align: left;
 }
-.profilepic {
-    /* Positioning */
-    float: left;
-    justify-content: center;
-    text-align: center;
-    
-    /* Layout */
+
+.trythis{
+    padding-left: 10px;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    padding: 10px
+}
+
+.profile {
     width: 50%;
-    font-size: 20px;
+    float: left;
+    text-align: center;
+    font-size: 25px;
+}
+
+.welcome {
+    float: right;
+    width: 50%;
+    text-align: left;
+    padding-top: 70px;
+    font-size: 22px;
+}
+
+.log {
+    background-color: #262A56;
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
 }
 
 .streak {
     padding-top: 100px;
-    width: 50%;
-    font-size: 20px;
-    float: right;
-    text-align: left;
-   
+    text-align: center;
 }
+
+.logout {
+    color: #262A56;
+    font-size: 20px;
+    text-decoration: underline;
+    padding-top: 20px;
+}
+
+.circle {
+    font-size: 80px;
+    background-color: #E3CCAE;
+    border-radius: 60%;
+    text-align: center;
+    padding: 20px;
+    width: 110px;
+    display: inline-block;
+}
+
+.day {
+    padding-top: 10px;
+}
+
 
 .actress {
     display: flex;
@@ -101,9 +150,21 @@ body{
 }
 
 .actress img {
-    width: 320px;
-    height: 220px;
+    width: 250px;
+    height: 150px;
     object-fit: cover;
+}
+
+.random {
+    border: 3px solid black;
+    width: 250px;
+    height: 150px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.random p {
+    padding-top: 25px;
 }
 
 table {
