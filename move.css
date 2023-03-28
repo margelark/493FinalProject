@@ -1,26 +1,34 @@
-.header {
-    background-color:#E3CCAE;
-    height: 200px;
-    width: 100%;
-    align-items: center;
-    position: fixed;
-    border-width: 3px;
-    border-color: #BBBBBB;
-    display: flex;
-    color: #000000;
-    font-size: 60px;
+body{
+    margin: 0;
     font-family: 'Poppins';
 }
 
-.logo img {
-    height: 150px;
-    width: 150px;
-    padding-left: 50px;
+.header {
+    /* Positioning */
+    display: flex;
+    align-items: center;
+    position: fixed;
+
+    /* Layout */
+    height: 200px;
+    width: 100%;
+
+    /* Style */
+    background-color:#E3CCAE;
+    color: #000000;
+    font-size: 60px;
+    font-family: 'Poppins';
+
+    border-width: 3px;
+    border-color: #BBBBBB;
 }
 
+.logo img {
+    /* Layout */
+    height: 150px;
+    width: 150px;
 
-body{
-    margin: 0;
+    padding-left: 50px;
 }
 
 .title {
@@ -56,11 +64,14 @@ body{
     text-align: center;
 }
 .profilepic {
+    /* Positioning */
+    float: left;
+    justify-content: center;
+    text-align: center;
+    
+    /* Layout */
     width: 50%;
     font-size: 20px;
-    float: left;
-    text-align: left;
-    justify-content: center;
 }
 
 .streak {
@@ -79,7 +90,6 @@ body{
 }
 
 .actresstitle {
-    
     font-size: 24px;
     font-family: 'Poppins'; 
     font-weight: bold;
@@ -96,7 +106,55 @@ body{
     object-fit: cover;
 }
 
-.profilepic {
-    text-align: center;
+table {
+    border-collapse: collapse;
+    width: 98%;
 }
 
+th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    width: 14%
+}
+
+th {
+    background-color: #ddd;
+}
+
+td {
+    background-color: #fff;
+    height: 400px;
+}
+
+td.current-day {
+    background-color: #E3CCAE;
+}
+
+th.current-day {
+    background-color: #262A56;
+    color: #fff;
+}
+
+.add-exercise {
+    display: flex;
+
+    width: 230px;
+    height: 50px;
+    
+    align-items:center;
+    justify-content:center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 40%;
+
+    border-width: 4px;
+    border-color: #E3CCAE;
+    border-style: solid;
+
+    color: white;
+    background-color: #262A56;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 20px;
+}
