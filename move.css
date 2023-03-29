@@ -1,42 +1,26 @@
-body{
-    margin: 0;
-    font-family: 'Poppins';
-}
-
 .header {
-    /* Positioning */
-    display: flex;
-    align-items: center;
-    position: fixed;
-
-    /* Layout */
+    background-color:#E3CCAE;
     height: 200px;
     width: 100%;
-
-    /* Style */
-    background-color:#E3CCAE;
+    align-items: center;
+    position: fixed;
+    border-width: 3px;
+    border-color: #BBBBBB;
+    display: flex;
     color: #000000;
     font-size: 60px;
     font-family: 'Poppins';
-
-    border-width: 3px;
-    border-color: #BBBBBB;
 }
 
 .logo img {
-    /* Layout */
     height: 150px;
     width: 150px;
-
     padding-left: 50px;
 }
 
-.view {
-    float: right;
-    font-size: 20px;
-    padding-left: 650px;
-    text-decoration: underline;
-    color: #262A56;
+
+body{
+    margin: 0;
 }
 
 .title {
@@ -45,11 +29,9 @@ body{
 }
 
 .scroll {
-    padding-top: 225px;
+    padding-top: 250px;
     overflow: scroll;
 }
-
-
 
 .wrapper {
     margin: 0px;
@@ -61,76 +43,97 @@ body{
 
 .ColOne {
     font-size: 30px;
-    width: 40%;
-    float: left;
-}
-
-.ColTwo{
-    width: 60%;
-    font-size: 30px;
-    float: right;
-    text-align: left;
-}
-
-.trythis{
-    padding-left: 10px;
-}
-
-.profile img {
-    width: 150px;
-    height: 150px;
-    padding: 10px
-}
-
-.profile {
     width: 50%;
     float: left;
     text-align: center;
-    font-size: 25px;
+    display: flex;
 }
 
-.welcome {
-    float: right;
+.ColTwo{
     width: 50%;
-    text-align: left;
-    padding-top: 70px;
-    font-size: 22px;
+    font-size: 30px;
+    float: right;
+    text-align: center;
 }
 
-.log {
-    background-color: #262A56;
+.workoutColOne {
+    font-size: 30px;
+    width: 50%;
+    float: left;
+    text-align: center;
+    display: block;
+    /* position: relative; */
+}
+
+.workoutTitle {
+    font-size: 30px;
+    float: left;
+    text-align: center;
+    display: flex;
+    padding-left: 5%;
+    margin: 0px;
+}
+
+.workoutSubtitle {
+    font-size: 15px;
+    font-style: oblique;
+    float: left;
+    text-align: center;
+    display: flex;
+    padding-left: 5%;
+    margin: 0px;
+}
+
+.workoutSectionTitle {
+    font-size: 20px;
+    float: left;
+    text-align: center;
+    display: flex;
+    padding-left: 5%;
+    margin: 0px;
+}
+
+.sectionDescription {
+    font-size: 10px;
+    float: left;
+    text-align: center;
+    display: flex;
+    padding-left: 5%;
+    margin: 0px;
+}
+
+.addWorkoutButton {
+    padding: 12px 28px;
+    font-size: 15px;
+    font-family: 'Poppins';
+    background-color: black;
     color: white;
-    border-radius: 8px;
-    padding: 10px;
-    margin: 10px;
+}
+
+.profilepic {
+    width: 50%;
+    font-size: 20px;
+    float: left;
+    text-align: left;
+    justify-content: center;
+}
+
+.smallprofilepic {
+    width: 50%;
+    font-size: 10px;
+    float: left;
+    text-align: right;
+    justify-content: center;
 }
 
 .streak {
     padding-top: 100px;
-    text-align: center;
-}
-
-.logout {
-    color: #262A56;
+    width: 50%;
     font-size: 20px;
-    text-decoration: underline;
-    padding-top: 20px;
+    float: right;
+    text-align: left;
+   
 }
-
-.circle {
-    font-size: 80px;
-    background-color: #E3CCAE;
-    border-radius: 60%;
-    text-align: center;
-    padding: 20px;
-    width: 110px;
-    display: inline-block;
-}
-
-.day {
-    padding-top: 10px;
-}
-
 
 .actress {
     display: flex;
@@ -139,6 +142,7 @@ body{
 }
 
 .actresstitle {
+    
     font-size: 24px;
     font-family: 'Poppins'; 
     font-weight: bold;
@@ -150,72 +154,13 @@ body{
 }
 
 .actress img {
-    width: 250px;
-    height: 150px;
+    width: 320px;
+    height: 220px;
     object-fit: cover;
 }
 
-.random {
-    border: 3px solid black;
-    width: 250px;
-    height: 150px;
-    font-size: 20px;
+.profilepic {
     text-align: center;
 }
 
-.random p {
-    padding-top: 25px;
-}
 
-table {
-    border-collapse: collapse;
-    width: 98%;
-}
-
-th, td {
-    border: 1px solid black;
-    text-align: center;
-    padding: 10px;
-    width: 14%
-}
-
-th {
-    background-color: #ddd;
-}
-
-td {
-    background-color: #fff;
-    height: 400px;
-}
-
-td.current-day {
-    background-color: #E3CCAE;
-}
-
-th.current-day {
-    background-color: #262A56;
-    color: #fff;
-}
-
-.add-exercise {
-    display: flex;
-
-    width: 230px;
-    height: 50px;
-    
-    align-items:center;
-    justify-content:center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 40%;
-
-    border-width: 4px;
-    border-color: #E3CCAE;
-    border-style: solid;
-
-    color: white;
-    background-color: #262A56;
-    text-decoration: underline;
-    font-weight: bold;
-    font-size: 20px;
-}
