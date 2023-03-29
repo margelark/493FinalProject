@@ -1,26 +1,42 @@
-.header {
-    background-color:#E3CCAE;
-    height: 200px;
-    width: 100%;
-    align-items: center;
-    position: fixed;
-    border-width: 3px;
-    border-color: #BBBBBB;
-    display: flex;
-    color: #000000;
-    font-size: 60px;
+body{
+    margin: 0;
     font-family: 'Poppins';
 }
 
+.header {
+    /* Positioning */
+    display: flex;
+    align-items: center;
+    position: fixed;
+
+    /* Layout */
+    height: 200px;
+    width: 100%;
+
+    /* Style */
+    background-color:#E3CCAE;
+    color: #000000;
+    font-size: 60px;
+    font-family: 'Poppins';
+
+    border-width: 3px;
+    border-color: #BBBBBB;
+}
+
 .logo img {
+    /* Layout */
     height: 150px;
     width: 150px;
+
     padding-left: 50px;
 }
 
-
-body{
-    margin: 0;
+.view {
+    float: right;
+    font-size: 20px;
+    padding-left: 650px;
+    text-decoration: underline;
+    color: #262A56;
 }
 
 .title {
@@ -29,9 +45,11 @@ body{
 }
 
 .scroll {
-    padding-top: 250px;
+    padding-top: 225px;
     overflow: scroll;
 }
+
+
 
 .wrapper {
     margin: 0px;
@@ -43,17 +61,15 @@ body{
 
 .ColOne {
     font-size: 30px;
-    width: 50%;
+    width: 40%;
     float: left;
-    text-align: center;
-    display: flex;
 }
 
 .ColTwo{
-    width: 50%;
+    width: 60%;
     font-size: 30px;
     float: right;
-    text-align: center;
+    text-align: left;
 }
 
 .workoutColOne {
@@ -63,6 +79,13 @@ body{
     text-align: center;
     display: block;
     /* position: relative; */
+}
+
+.workoutColTwo {
+    width: 50%;
+    font-size: 30px;
+    float: right;
+    text-align: center;
 }
 
 .workoutTitle {
@@ -110,13 +133,23 @@ body{
     color: white;
 }
 
-.profilepic {
-    width: 50%;
-    font-size: 20px;
-    float: left;
-    text-align: left;
-    justify-content: center;
+.trythis{
+    padding-left: 10px;
 }
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    padding: 10px
+}
+
+.profile {
+    width: 50%;
+    float: left;
+    text-align: center;
+    font-size: 25px;
+}
+
 
 .smallprofilepic {
     width: 50%;
@@ -126,14 +159,48 @@ body{
     justify-content: center;
 }
 
+.welcome {
+    float: right;
+    width: 50%;
+    text-align: left;
+    padding-top: 70px;
+    font-size: 22px;
+}
+
+.log {
+    background-color: #262A56;
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+}
+
 .streak {
     padding-top: 100px;
-    width: 50%;
-    font-size: 20px;
-    float: right;
-    text-align: left;
-   
+    text-align: center;
 }
+
+.logout {
+    color: #262A56;
+    font-size: 20px;
+    text-decoration: underline;
+    padding-top: 20px;
+}
+
+.circle {
+    font-size: 80px;
+    background-color: #E3CCAE;
+    border-radius: 60%;
+    text-align: center;
+    padding: 20px;
+    width: 110px;
+    display: inline-block;
+}
+
+.day {
+    padding-top: 10px;
+}
+
 
 .actress {
     display: flex;
@@ -142,7 +209,6 @@ body{
 }
 
 .actresstitle {
-    
     font-size: 24px;
     font-family: 'Poppins'; 
     font-weight: bold;
@@ -154,13 +220,72 @@ body{
 }
 
 .actress img {
-    width: 320px;
-    height: 220px;
+    width: 250px;
+    height: 150px;
     object-fit: cover;
 }
 
-.profilepic {
+.random {
+    border: 3px solid black;
+    width: 250px;
+    height: 150px;
+    font-size: 20px;
     text-align: center;
 }
 
+.random p {
+    padding-top: 25px;
+}
 
+table {
+    border-collapse: collapse;
+    width: 98%;
+}
+
+th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    width: 14%
+}
+
+th {
+    background-color: #ddd;
+}
+
+td {
+    background-color: #fff;
+    height: 400px;
+}
+
+td.current-day {
+    background-color: #E3CCAE;
+}
+
+th.current-day {
+    background-color: #262A56;
+    color: #fff;
+}
+
+.add-exercise {
+    display: flex;
+
+    width: 230px;
+    height: 50px;
+    
+    align-items:center;
+    justify-content:center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 40%;
+
+    border-width: 4px;
+    border-color: #E3CCAE;
+    border-style: solid;
+
+    color: white;
+    background-color: #262A56;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 20px;
+}
