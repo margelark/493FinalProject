@@ -10,13 +10,13 @@ body{
     position: fixed;
 
     /* Layout */
-    height: 200px;
+    height: 100px;
     width: 100%;
 
     /* Style */
     background-color:#E3CCAE;
     color: #000000;
-    font-size: 60px;
+    font-size: 50px;
     font-family: 'Poppins';
 
     border-width: 3px;
@@ -25,9 +25,9 @@ body{
 
 .logo img {
     /* Layout */
-    height: 150px;
-    width: 150px;
-
+    height: 80px;
+    width: 80px;
+    padding-top: 10%;;
     padding-left: 50px;
 }
 
@@ -45,7 +45,7 @@ body{
 }
 
 .scroll {
-    padding-top: 225px;
+    padding-top: 125px;
     overflow: scroll;
 }
 
@@ -88,8 +88,18 @@ body{
     text-align: center;
 }
 
+.workoutHeader {
+    background-color: #000000;
+    color: white;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    width: 98%;
+    margin-bottom: 8px;
+}
+
 .workoutTitle {
     font-size: 30px;
+    font-style: oblique;
     float: left;
     text-align: center;
     display: flex;
@@ -98,8 +108,23 @@ body{
 }
 
 .workoutSubtitle {
+    background-color: inherit;
+    color: inherit;
+    width: 95%;
     font-size: 15px;
     font-style: oblique;
+    font-weight: 100;
+    float: left;
+    text-align: center;
+    display: flex;
+    padding-left: 5%;
+    margin: 0px;
+}
+
+.workoutDescription {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 100;
     float: left;
     text-align: center;
     display: flex;
@@ -152,8 +177,9 @@ body{
 
 
 .smallprofilepic {
-    width: 50%;
+    width: 60px;
     font-size: 10px;
+    padding-left: 55%;
     float: left;
     text-align: right;
     justify-content: center;
