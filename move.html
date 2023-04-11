@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+<script src='https://code.jquery.com/jquery-3.6.3.min.js'></script>
+<script src='page.js'></script>
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="move.css">
@@ -7,14 +9,23 @@
     </head>
     <body>
         <div class="header">
+            <div class="dropdown">
+                <button id="dropbtn"><img src="bars.png" width="40px" height="35px" id="bars"></button>
+                <div id="menu" class="dropdown-content">
+                    <a href="move.html">Home</a>
+                    <a href="schedule.html">Schedule</a>
+                    <a href="profile.html">Profile</a>
+                    <a href="workout1.html">Workouts</a>
+                </div>
+            </div>
             <div class="logo">
-                <img src="logo.png">
+                <button class="btn"><img src="logo.png"></button>
             </div>
             <div class="title">
                 MoveMore
             </div>
             <div class="smallprofilepic" >
-                <img src="smallProfile.png" width="80px">
+                <button class="btn"> <img src="smallProfile.png" width="80px"> </button>
             </div>
         </div> 
 
@@ -22,7 +33,6 @@
             <div class="wrapper">
                 <div class="ColOne">
                     <div class="profile">
-                        <img src="download.png"> 
                         <div class="buttons">
                             <div class="log">Log Workouts</div>
                             <div class="log">View Progress</div>  
@@ -31,9 +41,11 @@
                         </div>
                     </div>
                     <div class="welcome">
-                        Welcome Back Wade!
+                        <span id="welcome_msg">Welcome Back</span><span>!</span>
                         <div class="streak">
-                            <div class="circle"> 3 </div>
+                            <div class="circle"> 
+                                <span id="streak_msg"></span>
+                            </div>
                             <div class="day">Day Streak!</div>
                         </div>
                     </div>
@@ -41,31 +53,74 @@
 
                 </div>
                 <div class="ColTwo"> <div class="trythis">Find your Perfect Routine: </div>
-                    <div class="actress">
+                    <div class="workout_list">
                         <div class="random">
                             <p>Generate a Random Workout Routine</p>
                             
                         </div>
-                        <div class="lauren">
-                            <img src="1.jpg">
-                            
+                        <div class="workout_label">
+                            <a href="workout1.html" class="workout_label">
+                                <img src="1.jpg">
+                                <span>Jog</span>
+                            </a>
                         </div>
-                        <div class="kathryn">
-                            <img src="2.jpg">
-                            
+                        <div class="workout_label">
+                            <a href="workout1.html" class="workout_label">
+                                <img src="2.jpg">
+                                <span>Ropes</span>
+                            </a>
                         </div>
-                        <div class="Celia">
-                            <img src="3.jpg">
-                            
+                        <div class="workout_label">
+                            <a href="workout1.html" class="workout_label">
+                                <img src="3.jpg">
+                                <span>Plank</span>
+                            </a>
                         </div>
-                        <div class="robyn">
-                            <img src="4.jpg">
-                            
+                        <div class="workout_label">
+                            <a href="workout1.html" class="workout_label">
+                                <img src="4.jpg">
+                                <span>More Ropes</span>
+                            </a>
                         </div>
-                        <div class="myra">
-                            <img src="6.jpg">
-                            
+                        <div class="workout_label">
+                            <a href="workout1.html" class="workout_label">
+                                <img src="6.jpg">
+                                <span>Situps</span>
+                            </a>
                         </div>
+                        <div class="rest">
+                            <a href="workout1.html" class="workout_label">
+                                <img src="1.jpg">
+                                <span>Jog</span>
+                            </a>
+                        </div>
+                        <div class="rest">
+                            <a href="workout1.html" class="workout_label">
+                                <img src="2.jpg">
+                                <span>Ropes</span>
+                            </a>
+                        </div>
+                        <div class="rest">
+                            <a href="workout1.html" class="workout_label">
+                                <img src="3.jpg">
+                                <span>Plank</span>
+                            </a>
+                        </div>
+                        <div class="rest">
+                            <a href="workout1.html" class="workout_label">
+                                <img src="4.jpg">
+                                <span>More Ropes</span>
+                            </a>
+                        </div>
+                        <div class="rest">
+                            <a href="workout1.html" class="workout_label">
+                                <img src="6.jpg">
+                                <span>Situps</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="plus">
+                        <button class="btn"><img src="plus.png" width="43px" height="40px" margin-top="20px"></button>
                     </div>
                     <hr>
                 </div>

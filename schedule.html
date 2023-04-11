@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+
+<script src='https://code.jquery.com/jquery-3.6.3.min.js'></script>
+<script src='page.js'></script>
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="move.css">
@@ -7,8 +10,17 @@
     </head>
     <body>
         <div class="header">
+            <div class="dropdown">
+                <button id="dropbtn"><img src="bars.png" width="40px" height="35px" id="bars"></button>
+                <div id="menu" class="dropdown-content">
+                    <a href="move.html">Home</a>
+                    <a href="schedule.html">Schedule</a>
+                    <a href="profile.html">Profile</a>
+                    <a href="workout1.html">Workouts</a>
+                </div>
+            </div>
             <div class="logo">
-                <img src="logo.png">
+                <button class="btn"><img src="logo.png"></button>
             </div>
             <div class="title">
                 MoveMore

@@ -3,6 +3,51 @@ body{
     font-family: 'Poppins';
 }
 
+#plus {
+    width: fit-content;
+    margin: auto;
+}
+
+#dropbtn {
+    background-color: #E3CCAE;
+    border: none;
+    cursor: pointer;
+    padding-left: 20px;
+}
+  
+  
+.dropdown {
+    position: relative;
+    display: flexbox;
+    flex-direction: column;
+}
+  
+.dropdown-content {
+    margin-top: 10px;
+    display: none;
+    position: absolute;
+    background-color: #E3CCAE;
+    min-width: 160px;
+    box-shadow: 0px 16px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+  /* Links inside the dropdown */
+.dropdown-content a {
+    font-size: 30px;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+
+.btn {
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
 .header {
     /* Positioning */
     display: flex;
@@ -28,7 +73,8 @@ body{
     height: 80px;
     width: 80px;
     padding-top: 10%;;
-    padding-left: 50px;
+    padding-left: 20px;
+    align-items: center;
 }
 
 .view {
@@ -163,12 +209,14 @@ body{
 }
 
 .profile img {
+    display: none;
     width: 150px;
     height: 150px;
     padding: 10px
 }
 
 .profile {
+    display: none;
     width: 50%;
     float: left;
     text-align: center;
@@ -186,9 +234,10 @@ body{
 }
 
 .welcome {
-    float: right;
+    /*float: right;*/
+    margin: auto;
     width: 50%;
-    text-align: left;
+    text-align: center;
     padding-top: 70px;
     font-size: 22px;
 }
@@ -227,11 +276,15 @@ body{
     padding-top: 10px;
 }
 
+.rest {
+    display: none;
+}
 
-.actress {
+
+.workout_list {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    margin-bottom: 15px;
 }
 
 .actresstitle {
@@ -241,14 +294,25 @@ body{
     margin-left: 10px;
 }
 
-.actress div {
+.workout_list div {
     margin: 10px;
 }
 
-.actress img {
+.workout_list img {
     width: 250px;
     height: 150px;
     object-fit: cover;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.workout_label {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    color: #000000;
 }
 
 .random {
