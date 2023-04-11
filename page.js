@@ -1,8 +1,17 @@
 let name = "";
 let streak = 0;
 
+let workoutTitle = "Workout";
+let Day = "1";
+let Month = "0";
+let Year = "2023";
+let Time = "12:00 AM";
+let workoutDay;
+let weekday;
+
 
 $(document).ready( function() {
+    console.log(document.getElementById('scroll').style.display);
     console.log("Ready!");
 
     //event listeners for buttons
@@ -32,6 +41,20 @@ $(document).ready( function() {
             document.getElementById("menu").style.display='block';
     })
 
+    //nav bar links
+    document.getElementById('Schedule').addEventListener('click', function() {
+        document.getElementById('scroll').style.display= 'none';
+        document.getElementById('schedule').style.display='block';
+
+    })
+
+    document.getElementById('Home').addEventListener('click', function() {
+        document.getElementById('schedule').style.display= 'none';
+        document.getElementById('scroll').style.display='block';
+
+    })
+
+
     //allows clicking anywhere on page to exit dropdown menu
     window.onclick = function(event) {
         if (!event.target.matches('#bars') && !event.target.matches('#dropbtn')) {
@@ -44,5 +67,29 @@ $(document).ready( function() {
     document.getElementById('streak_msg').textContent = streak;
     document.getElementById('welcome_msg').textContent = document.getElementById('welcome_msg').textContent + name;
 
-});
+    //js for Schedule page
+    document.getElementById("addworkout").addEventListener("click", click);
 
+    function click() {
+        Month = $("#month").val();
+        Day = $("#day").val();
+        Year = $("#year").val();
+        Time = $("#time").val();
+
+        console.log(Year);
+        console.log(Month);
+        console.log(Day);
+
+        workoutDay = new Date(Year, Month, Day);
+        console.log(workoutDay);
+        weekday = workoutDay.getDay();
+        console.log(weekday);
+
+        document.getElementById(weekday).innerHTML = Time + " " + workoutTitle;
+        document.getElementById(weekday + 'a').innerHTML = Time + " " + workoutTitle;
+        
+        document.getElementById('popup').style.visibility = 'visible';
+    }
+
+
+});
