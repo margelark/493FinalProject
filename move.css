@@ -28,6 +28,8 @@ body{
     position: absolute;
     background-color: #E3CCAE;
     min-width: 160px;
+    font-size: 25px;
+    text-align: center;
     box-shadow: 0px 16px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -90,9 +92,11 @@ body{
     margin-left: 50px;
 }
 
-.scroll {
+#scroll {
     padding-top: 125px;
     overflow: scroll;
+    display: block;
+    
 }
 
 
@@ -329,7 +333,9 @@ body{
 
 table {
     border-collapse: collapse;
-    width: 98%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 th, td {
@@ -340,21 +346,11 @@ th, td {
 }
 
 th {
-    background-color: #ddd;
+    background-color: #E3CCAE;
 }
 
 td {
     background-color: #fff;
-    height: 400px;
-}
-
-td.current-day {
-    background-color: #E3CCAE;
-}
-
-th.current-day {
-    background-color: #262A56;
-    color: #fff;
 }
 
 .add-exercise {
@@ -379,3 +375,28 @@ th.current-day {
     font-weight: bold;
     font-size: 20px;
 }
+
+  #schedule {
+    text-align: center;
+    display: none;
+  }
+
+  #popup {
+    visibility: hidden;
+  }
+
+  
+  #homeTR {
+    font-size: 25px;
+    height: 100px;
+    width: 50px;;
+  }
+  
+
+
+
+  
+
+ 
+
+ 
