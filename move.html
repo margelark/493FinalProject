@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <script src='https://code.jquery.com/jquery-3.6.3.min.js'></script>
-<script src='page.js'></script>
+<script src='493FinalProject/page.js'></script>
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="move.css">
@@ -12,10 +12,10 @@
             <div class="dropdown">
                 <button id="dropbtn"><img src="bars.png" width="40px" height="35px" id="bars"></button>
                 <div id="menu" class="dropdown-content">
-                    <a href="move.html">Home</a>
-                    <a href="schedule.html">Schedule</a>
-                    <a href="profile.html">Profile</a>
-                    <a href="workout1.html">Workouts</a>
+                    <div id="Home">Home</div>
+                    <div id="Schedule">Schedule</div>
+                    <div id="Profile">Goals</div>
+                    <div id="Workouts">Workouts</div>
                 </div>
             </div>
             <div class="logo">
@@ -29,7 +29,7 @@
             </div>
         </div> 
 
-        <div class="scroll">
+        <div id="scroll">
             <div class="wrapper">
                 <div class="ColOne">
                     <div class="profile">
@@ -42,6 +42,29 @@
                     </div>
                     <div class="welcome">
                         <span id="welcome_msg">Welcome Back</span><span>!</span>
+
+                        <p>Upcoming this week:</p>
+                            <table id="homeTable">
+                                <tr id="homeTR">
+                                    <th>M</th>
+                                    <th>Tu</th>
+                                    <th>W</th>
+                                    <th>Th</th>
+                                    <th>F</th>
+                                    <th>Sa</th>
+                                    <th>Su</th>
+                                </tr>
+                                <tr id="homeTR">
+                                    <td id="1a"></td>
+                                    <td id="2a"></td>
+                                    <td id="3a"></td>
+                                    <td id="4a"></td>
+                                    <td id="5a"></td>
+                                    <td id="6a"></td>
+                                    <td id="0a"></td>
+                                </tr>
+            
+                            </table>
                         <div class="streak">
                             <div class="circle"> 
                                 <span id="streak_msg"></span>
@@ -127,6 +150,225 @@
             </div>
     
         </div>
+
+    <!--Start of schedule page content-->
+        <div id="schedule" style="padding-top: 125px">
+            <div class="makeschedule">
+                <div class='enterFrequency'>
+                    <h3>Add <span id='workoutName'>Workout</span> to your Calendar</h3>
+                    <p>Workout duration: <span id='duration'>30</span> minutes</p>
+                    
+                    <div id="days">
+                      <p>Choose a Date and Time: </p>
+
+                        <select id="month">
+                            <option value="0">January</option>
+                            <option value="1">February</option>
+                            <option value="2">March</option>
+                            <option value="3">April</option>
+                            <option value="4">May</option>
+                            <option value="5">June</option>
+                            <option value="6">July</option>
+                            <option value="7">August</option>
+                            <option value="8">September</option>
+                            <option value="9">October</option>
+                            <option value="10">November</option>
+                            <option value="11">December</option>
+                        </select>
+                      
+                        <select id="day">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+
+                        <select id="year">
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                            <option value="2029">2029</option>
+                            <option value="2030">2030</option>
+                        </select>
+
+
+                        <select id="time">
+                              <option value="12:00 AM">12:00 AM</option>
+                              <option value="12:15 AM">12:15 AM</option>
+                              <option value="12:30 AM">12:30 AM</option>
+                              <option value="12:45 AM">12:45 AM</option>
+                              <option value="1:00 AM">1:00 AM</option>
+                              <option value="1:15 AM">1:15 AM</option>
+                              <option value="1:30 AM">1:30 AM</option>
+                              <option value="1:45 AM">1:45 AM</option>
+                              <option value="2:00 AM">2:00 AM</option>
+                              <option value="2:15 AM">2:15 AM</option>
+                              <option value="2:30 AM">2:30 AM</option>
+                              <option value="2:45 AM">2:45 AM</option>
+                              <option value="3:00 AM">3:00 AM</option>
+                              <option value="3:15 AM">3:15 AM</option>
+                              <option value="3:30 AM">3:30 AM</option>
+                              <option value="3:45 AM">3:45 AM</option>
+                              <option value="4:00 AM">4:00 AM</option>
+                              <option value="4:15 AM">4:15 AM</option>
+                              <option value="4:30 AM">4:30 AM</option>
+                              <option value="4:45 AM">4:45 AM</option>
+                              <option value="5:00 AM">5:00 AM</option>
+                              <option value="5:15 AM">5:15 AM</option>
+                              <option value="5:30 AM">5:30 AM</option>
+                              <option value="5:45 AM">5:45 AM</option>
+                              <option value="6:00 AM">6:00 AM</option>
+                              <option value="6:15 AM">6:15 AM</option>
+                              <option value="6:30 AM">6:30 AM</option>
+                              <option value="6:45 AM">6:45 AM</option>
+                              <option value="7:00 AM">7:00 AM</option>
+                              <option value="7:15 AM">7:15 AM</option>
+                              <option value="7:30 AM">7:30 AM</option>
+                              <option value="7:45 AM">7:45 AM</option>
+                              <option value="8:00 AM">8:00 AM</option>
+                              <option value="8:15 AM">8:15 AM</option>
+                              <option value="8:30 AM">8:30 AM</option>
+                              <option value="8:45 AM">8:45 AM</option>
+                              <option value="9:00 AM">9:00 AM</option>
+                              <option value="9:15 AM">9:15 AM</option>
+                              <option value="9:30 AM">9:30 AM</option>
+                              <option value="9:45 AM">9:45 AM</option>
+                              <option value="10:00 AM">10:00 AM</option>
+                              <option value="10:15 AM">10:15 AM</option>
+                              <option value="10:30 AM">10:30 AM</option>
+                              <option value="10:45 AM">10:45 AM</option>
+                              <option value="11:00 AM">11:00 AM</option>
+                              <option value="11:15 AM">11:15 AM</option>
+                              <option value="11:30 AM">11:30 AM</option>
+                              <option value="11:45 AM">11:45 AM</option>
+                              <option value="12:00 PM">12:00 PM</option>
+
+                              <option value="12:15 PM">12:15 PM</option>
+                              <option value="12:30 PM">12:30 PM</option>
+                              <option value="12:45 PM">12:45 PM</option>
+                              <option value="1:00 PM">1:00 PM</option>
+                              <option value="1:15 PM">1:15 PM</option>
+                              <option value="1:30 PM">1:30 PM</option>
+                              <option value="1:45 PM">1:45 PM</option>
+                              <option value="2:00 PM">2:00 PM</option>
+                              <option value="2:15 PM">2:15 PM</option>
+                              <option value="2:30 PM">2:30 PM</option>
+                              <option value="2:45 PM">2:45 PM</option>
+                              <option value="3:00 PM">3:00 PM</option>
+                              <option value="3:15 PM">3:15 PM</option>
+                              <option value="3:30 PM">3:30 PM</option>
+                              <option value="3:45 PM">3:45 PM</option>
+                              <option value="4:00 PM">4:00 PM</option>
+                              <option value="4:15 PM">4:15 PM</option>
+                              <option value="4:30 PM">4:30 PM</option>
+                              <option value="4:45 PM">4:45 PM</option>
+                              <option value="5:00 PM">5:00 PM</option>
+                              <option value="5:15 PM">5:15 PM</option>
+                              <option value="5:30 PM">5:30 PM</option>
+                              <option value="5:45 PM">5:45 PM</option>
+                              <option value="6:00 PM">6:00 PM</option>
+                              <option value="6:15 PM">6:15 PM</option>
+                              <option value="6:30 PM">6:30 PM</option>
+                              <option value="6:45 PM">6:45 PM</option>
+                              <option value="7:00 PM">7:00 PM</option>
+                              <option value="7:15 PM">7:15 PM</option>
+                              <option value="7:30 PM">7:30 PM</option>
+                              <option value="7:45 PM">7:45 PM</option>
+                              <option value="8:00 PM">8:00 PM</option>
+                              <option value="8:15 PM">8:15 PM</option>
+                              <option value="8:30 PM">8:30 PM</option>
+                              <option value="8:45 PM">8:45 PM</option>
+                              <option value="9:00 PM">9:00 PM</option>
+                              <option value="9:15 PM">9:15 PM</option>
+                              <option value="9:30 PM">9:30 PM</option>
+                              <option value="9:45 PM">9:45 PM</option>
+                              <option value="10:00 PM">10:00 PM</option>
+                              <option value="10:15 PM">10:15 PM</option>
+                              <option value="10:30 PM">10:30 PM</option>
+                              <option value="10:45 PM">10:45 PM</option>
+                              <option value="11:00 PM">11:00 PM</option>
+                              <option value="11:15 PM">11:15 PM</option>
+                              <option value="11:30 PM">11:30 PM</option>
+                              <option value="11:45 PM">11:45 PM</option>
+                              
+                             
+                            </select>
+                      <br>
+                      <br>
+                      <button id="addworkout">Add Workout to your Routine</button> 
+                    </div>
+                  </div>
+            </div>
+
+            <br>
+            
+            <div class="calendar">
+                <table>
+                    <tr>
+                        <th>Monday</th>
+                        <td id="1"></td>
+                    </tr>
+                    <tr>
+                        <th>Tuesday</th>
+                        <td id="2"></td>
+                    </tr>
+                    <tr>
+                        <th>Wednesday</th>
+                        <td id="3"></td>
+                    </tr>
+                    <tr>
+                        <th>Thursday</th>
+                        <td id="4"></td>
+                    </tr>
+                    <tr>
+                        <th>Friday</th>
+                        <td id="5"></td>
+                    </tr>
+                    <tr>
+                        <th>Saturday</th>
+                        <td id="6"></td>
+                    </tr>
+                    <tr>
+                        <th>Sunday</th>
+                        <td id="0"></td>
+                    </tr>
+
+                </table>
+
+               
+                <a id="popup" href='#'>Add to Google Calendar?</a>
+            </div>
+
 
 
     </body>
