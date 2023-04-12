@@ -100,45 +100,36 @@ body{
 }
 
 
-
 .wrapper {
     margin: 0px;
     width: 100%;
     font-family: 'Poppins'; 
     font-weight: bold;
     margin-left: 10px;
+    display: flex;
 }
 
 .ColOne {
     font-size: 30px;
-    width: 40%;
-    float: left;
+    float: right;
 }
 
 .ColTwo{
-    width: 60%;
+    float: left;
     font-size: 30px;
-    float: right;
     text-align: left;
 }
 
-.workoutColOne {
-    font-size: 30px;
-    width: 50%;
-    float: left;
-    text-align: center;
-    display: block;
+.wColOne {
+    float: right;
     /* position: relative; */
 }
 
-.workoutColTwo {
-    width: 50%;
-    font-size: 30px;
-    float: right;
-    text-align: center;
+.wColTwo {
+    float: left;
 }
 
-.workoutHeader {
+.wHeader {
     background-color: #000000;
     color: white;
     padding-top: 2%;
@@ -147,7 +138,7 @@ body{
     margin-bottom: 8px;
 }
 
-.workoutTitle {
+.wTitle {
     font-size: 30px;
     font-style: oblique;
     float: left;
@@ -157,7 +148,7 @@ body{
     margin: 0px;
 }
 
-.workoutSubtitle {
+.wSubtitle {
     background-color: inherit;
     color: inherit;
     width: 95%;
@@ -171,7 +162,7 @@ body{
     margin: 0px;
 }
 
-.workoutDescription {
+.wDescription {
     font-size: 15px;
     font-style: normal;
     font-weight: 100;
@@ -182,7 +173,7 @@ body{
     margin: 0px;
 }
 
-.workoutSectionTitle {
+.wSectionTitle {
     font-size: 20px;
     float: left;
     text-align: center;
@@ -191,7 +182,7 @@ body{
     margin: 0px;
 }
 
-.sectionDescription {
+.sDescription {
     font-size: 10px;
     float: left;
     text-align: center;
@@ -200,7 +191,7 @@ body{
     margin: 0px;
 }
 
-.addWorkoutButton {
+.aWorkoutButton {
     padding: 12px 28px;
     font-size: 15px;
     font-family: 'Poppins';
@@ -388,6 +379,15 @@ td {
     height: 100px;
     width: 50px;;
   }
+  
+
+
+
+  
+
+ 
+
+ 
   
 
 
