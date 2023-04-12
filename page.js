@@ -9,6 +9,17 @@ let Time = "12:00 AM";
 let workoutDay;
 let weekday;
 
+const workoutList = ['15glute.html', 
+                    '30abs.html', 
+                    '30arms.html', 
+                    '30cardio.html', 
+                    '30hiit.html', 
+                    '30legs.html', 
+                    '45abs.html', 
+                    '45arms.html', 
+                    '45cardio.html',
+                    '45legs.html'];
+
 
 $(document).ready( function() {
     console.log(document.getElementById('scroll').style.display);
@@ -31,6 +42,11 @@ $(document).ready( function() {
         extras.forEach(element => {
             element.classList.toggle('workout_label');
         });
+    })
+
+    document.getElementById('random').addEventListener('click', function() {
+        var url = workoutList[Math.floor(Math.random() * 10)];
+        window.open(url, '_blank');
     })
 
     //event listener for dropdown menu
