@@ -42,6 +42,7 @@ $(document).ready( function() {
     })
 
     //nav bar links
+    
     document.getElementById('Schedule').addEventListener('click', function() {
         document.getElementById('scroll').style.display= 'none';
         document.getElementById('schedule').style.display='block';
