@@ -1,0 +1,317 @@
+body{
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+.header {
+    /* Positioning */
+    display: flex;
+    align-items: center;
+    position: fixed;
+
+    /* Layout */
+    height: 100px;
+    width: 100%;
+
+    /* Style */
+    background-color:#E3CCAE;
+    color: #000000;
+    font-size: 50px;
+    font-family: 'Poppins';
+
+    border-width: 3px;
+    border-color: #BBBBBB;
+}
+
+.logo img {
+    /* Layout */
+    height: 80px;
+    width: 80px;
+    padding-top: 10%;;
+    padding-left: 50px;
+}
+
+.view {
+    float: right;
+    font-size: 20px;
+    padding-left: 650px;
+    text-decoration: underline;
+    color: #262A56;
+}
+
+.title {
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.scroll {
+    padding-top: 125px;
+    overflow: scroll;
+}
+
+
+
+.wrapper {
+    margin: 0px;
+    width: 100%;
+    font-family: 'Poppins'; 
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.ColOne {
+    font-size: 30px;
+    width: 40%;
+    float: left;
+}
+
+.ColTwo{
+    width: 60%;
+    font-size: 30px;
+    float: right;
+    text-align: left;
+}
+
+.workoutColOne {
+    font-size: 30px;
+    width: 50%;
+    float: left;
+    text-align: center;
+    display: block;
+    /* position: relative; */
+}
+
+.workoutColTwo {
+    width: 50%;
+    font-size: 30px;
+    float: right;
+    text-align: center;
+}
+
+.workoutHeader {
+    background-color: #000000;
+    color: white;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    width: 98%;
+    margin-bottom: 8px;
+}
+
+.workoutTitle {
+    font-size: 30px;
+    font-style: oblique;
+    float: left;
+    text-align: center;
+    display: flex;
+    padding-left: 5%;
+    margin: 0px;
+}
+
+.workoutSubtitle {
+    background-color: inherit;
+    color: inherit;
+    width: 95%;
+    font-size: 15px;
+    font-style: oblique;
+    font-weight: 100;
+    float: left;
+    text-align: center;
+    display: flex;
+    padding-left: 5%;
+    margin: 0px;
+}
+
+.workoutDescription {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 100;
+    float: left;
+    text-align: center;
+    display: flex;
+    padding-left: 5%;
+    margin: 0px;
+}
+
+.workoutSectionTitle {
+    font-size: 20px;
+    float: left;
+    text-align: center;
+    display: flex;
+    padding-left: 5%;
+    margin: 0px;
+}
+
+.sectionDescription {
+    font-size: 10px;
+    float: left;
+    text-align: center;
+    display: flex;
+    padding-left: 5%;
+    margin: 0px;
+}
+
+.addWorkoutButton {
+    padding: 12px 28px;
+    font-size: 15px;
+    font-family: 'Poppins';
+    background-color: black;
+    color: white;
+}
+
+.trythis{
+    padding-left: 10px;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    padding: 10px
+}
+
+.profile {
+    width: 50%;
+    float: left;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+.smallprofilepic {
+    width: 60px;
+    font-size: 10px;
+    padding-left: 55%;
+    float: left;
+    text-align: right;
+    justify-content: center;
+}
+
+.welcome {
+    float: right;
+    width: 50%;
+    text-align: left;
+    padding-top: 70px;
+    font-size: 22px;
+}
+
+.log {
+    background-color: #262A56;
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.streak {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.logout {
+    color: #262A56;
+    font-size: 20px;
+    text-decoration: underline;
+    padding-top: 20px;
+}
+
+.circle {
+    font-size: 80px;
+    background-color: #E3CCAE;
+    border-radius: 60%;
+    text-align: center;
+    padding: 20px;
+    width: 110px;
+    display: inline-block;
+}
+
+.day {
+    padding-top: 10px;
+}
+
+
+.actress {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.actresstitle {
+    font-size: 24px;
+    font-family: 'Poppins'; 
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.actress div {
+    margin: 10px;
+}
+
+.actress img {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.random {
+    border: 3px solid black;
+    width: 250px;
+    height: 150px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.random p {
+    padding-top: 25px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 98%;
+}
+
+th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    width: 14%
+}
+
+th {
+    background-color: #ddd;
+}
+
+td {
+    background-color: #fff;
+    height: 400px;
+}
+
+td.current-day {
+    background-color: #E3CCAE;
+}
+
+th.current-day {
+    background-color: #262A56;
+    color: #fff;
+}
+
+.add-exercise {
+    display: flex;
+
+    width: 230px;
+    height: 50px;
+    
+    align-items:center;
+    justify-content:center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 40%;
+
+    border-width: 4px;
+    border-color: #E3CCAE;
+    border-style: solid;
+
+    color: white;
+    background-color: #262A56;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 20px;
+}
