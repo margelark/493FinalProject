@@ -57,17 +57,24 @@ $(document).ready( function() {
             document.getElementById("menu").style.display='block';
     })
 
-    //nav bar links
-    
+    //nav bar links    
     document.getElementById('Schedule').addEventListener('click', function() {
         document.getElementById('scroll').style.display= 'none';
         document.getElementById('schedule').style.display='block';
-
+        document.getElementById('goalPage').style.display='none';
     })
 
     document.getElementById('Home').addEventListener('click', function() {
         document.getElementById('schedule').style.display= 'none';
         document.getElementById('scroll').style.display='block';
+        document.getElementById('goalPage').style.display='none';
+
+    })
+    
+    document.getElementById('Goal').addEventListener('click', function() {
+        document.getElementById('schedule').style.display= 'none';
+        document.getElementById('scroll').style.display='none';
+        document.getElementById('goalPage').style.display='block';
 
     })
 
@@ -108,5 +115,78 @@ $(document).ready( function() {
         document.getElementById('popup').style.visibility = 'visible';
     }
 
+    // maintaining goals
+    maintain(); // HERE
+    
+    function maintain() {
+        var i =0;
+        
+        containers = document.querySelectorAll(".container");
+        compList = document.querySelectorAll(".complete");
+        goalsList = document.querySelectorAll(".line");
+        delList = document.querySelectorAll(".del");
+        
+        containers.forEach(element => {
+            compList[i].addEventListener('click', function() {
+                if (compClick()) {
+                    element.remove();
+                }
+            });
+            
+            goalsList[i].addEventListener('click', goalclick);
+            
+            delList[i].addEventListener('click', function() {
+                if (delClick()) {
+                    element.remove();
+                }
+            });
+            
+            ++i;
+        });
+    }
+    
+    // editing goals
+    function goalclick() {
+        var oldgoal = this.getElementsByClassName("line").innerHTML;
+        let editgoal = prompt("If you would like to edit the current goal please alter it here", oldgoal);
+        
+        if (editgoal != null && editgoal != "") {
+            this.innerHTML = editgoal;
+            //maintain(); // HERE
+        }
+    }
+    
+    // deleting
+    function delClick() {
+        if (confirm("Are you sure you wish to delete this item?")) {
+            return true;
+        }
+        return false;
+    }
+    
+    // completing
+    function compClick() {
+        if (confirm("Have you completed the goal?")) {
+            alert("Congradulations on completing your goal!");
+            return true;
+        }
+        return false;
+    }
+    
+    // adding
+    document.getElementById("addgoal").addEventListener("click", add);
+    function add() {
+        let input = prompt("Please enter your new goal:", "Goal");
+        if (input == null || input == "") {
+            alert("No goal entered");
+            
+        } else {
+            // actually display the text
+            document.getElementById("new").insertAdjacentHTML("beforeend",
+                "<div class='container'><div class='complete'> </div> <div class='line'>" + input + "</div><div class='del'>X</div></div>");
+
+            maintain(); // HERE
+        }
+    }
 
 });
