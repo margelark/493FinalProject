@@ -238,11 +238,9 @@ body{
 }
 
 .welcome {
-    /*float: right;*/
-    margin: auto;
-    width: 50%;
-    text-align: center;
-    padding-top: 70px;
+    float: left;
+    
+    
     font-size: 22px;
 }
 
@@ -255,7 +253,6 @@ body{
 }
 
 .streak {
-    padding-top: 100px;
     text-align: center;
 }
 
@@ -343,6 +340,7 @@ th, td {
     text-align: center;
     padding: 10px;
     width: 14%
+
 }
 
 th {
@@ -384,7 +382,6 @@ td {
   #popup {
     visibility: hidden;
   }
-
   
   #homeTR {
     font-size: 25px;
@@ -392,6 +389,14 @@ td {
     width: 50px;;
   }
   
+
+
+
+  
+
+ 
+
+ 
 
 
 
