@@ -13,9 +13,9 @@
                 <button id="dropbtn"><img src="bars.png" width="40px" height="35px" id="bars"></button>
                 <div id="menu" class="dropdown-content">
                     <div id="Home">Home</div>
-                    <div id="Schedule">Schedule</div>
-                    <div id="Profile">Goals</div>
-                    <div id="Workouts">Workouts</div>
+                    <div id="Schedule" onclick="changepage('schedule')">Schedule</div>
+                    <div id="Goal">Goals</div>
+                    <!--<div id="Workouts">Workouts</div>-->
                 </div>
             </div>
             <div class="logo">
@@ -25,7 +25,7 @@
                 MoveMore
             </div>
             <div class="smallprofilepic" >
-                <button class="btn"> <img src="smallProfile.png" width="80px"> </button>
+                
             </div>
         </div> 
 
@@ -41,7 +41,8 @@
                         </div>
                     </div>
                     <div class="welcome">
-                        <span id="welcome_msg">Welcome Back</span><span>!</span>
+                        <span id="welcome_msg" style="font-size:30px;">Welcome to MoveMore</span><span>!</span>
+                        <p style="font-size: 15px;">Our mission is to make exercise easy! Add workouts to our built in schedule or add to your Google Calendar. Either way, our goal is to find a way to integrate exercise into your life without having to plan it!</p>
 
                         <p>Upcoming this week:</p>
                             <table id="homeTable">
@@ -55,16 +56,17 @@
                                     <th>Su</th>
                                 </tr>
                                 <tr id="homeTR">
-                                    <td id="1a"></td>
-                                    <td id="2a"></td>
-                                    <td id="3a"></td>
-                                    <td id="4a"></td>
-                                    <td id="5a"></td>
-                                    <td id="6a"></td>
-                                    <td id="0a"></td>
+                                    <td id="1a" style="font-size: 15px;">Nothing yet!</td>
+                                    <td id="2a" style="font-size: 15px;">Nothing yet!</td>
+                                    <td id="3a" style="font-size: 15px;">Nothing yet!</td>
+                                    <td id="4a" style="font-size: 15px;">Nothing yet!</td>
+                                    <td id="5a" style="font-size: 15px;">Nothing yet!</td>
+                                    <td id="6a" style="font-size: 15px;">Nothing yet!</td>
+                                    <td id="0a" style="font-size: 15px;">Nothing yet!</td>
                                 </tr>
             
                             </table>
+                            <br>
                         <div class="streak">
                             <div class="circle"> 
                                 <span id="streak_msg"></span>
@@ -84,61 +86,61 @@
                         <div class="workout_label">
                             <a href="workout1.html" class="workout_label">
                                 <img src="1.jpg">
-                                <span>Jog</span>
+                                <span>30 Minute Power Walk</span>
                             </a>
                         </div>
                         <div class="workout_label">
                             <a href="workout1.html" class="workout_label">
                                 <img src="2.jpg">
-                                <span>Ropes</span>
+                                <span>30 Minute HIIT</span>
                             </a>
                         </div>
                         <div class="workout_label">
                             <a href="workout1.html" class="workout_label">
                                 <img src="3.jpg">
-                                <span>Plank</span>
+                                <span>30 Minute Ab Shredder</span>
                             </a>
                         </div>
                         <div class="workout_label">
                             <a href="workout1.html" class="workout_label">
                                 <img src="4.jpg">
-                                <span>More Ropes</span>
+                                <span>30 Minute Bicep Burner</span>
                             </a>
                         </div>
                         <div class="workout_label">
                             <a href="workout1.html" class="workout_label">
                                 <img src="6.jpg">
-                                <span>Situps</span>
+                                <span>45 Minute 6-pack Sculptor</span>
                             </a>
                         </div>
                         <div class="rest">
                             <a href="workout1.html" class="workout_label">
                                 <img src="1.jpg">
-                                <span>Jog</span>
+                                <span>45 Minute Cardio</span>
                             </a>
                         </div>
                         <div class="rest">
                             <a href="workout1.html" class="workout_label">
                                 <img src="2.jpg">
-                                <span>Ropes</span>
+                                <span>45 Minute Upper Body</span>
                             </a>
                         </div>
                         <div class="rest">
                             <a href="workout1.html" class="workout_label">
                                 <img src="3.jpg">
-                                <span>Plank</span>
+                                <span>30 Minute Leg Day</span>
                             </a>
                         </div>
                         <div class="rest">
                             <a href="workout1.html" class="workout_label">
                                 <img src="4.jpg">
-                                <span>More Ropes</span>
+                                <span>45 Minute Quad Crusher</span>
                             </a>
                         </div>
                         <div class="rest">
                             <a href="workout1.html" class="workout_label">
                                 <img src="6.jpg">
-                                <span>Situps</span>
+                                <span>15 Minute Glute Burn</span>
                             </a>
                         </div>
                     </div>
@@ -153,7 +155,7 @@
 
     <!--Start of schedule page content-->
         <div id="schedule" style="padding-top: 125px">
-            <div class="makeschedule">
+            <div id="makeschedule">
                 <div class='enterFrequency'>
                     <h3>Add <span id='workoutName'>Workout</span> to your Calendar</h3>
                     <p>Workout duration: <span id='duration'>30</span> minutes</p>
@@ -326,13 +328,14 @@
                       <br>
                       <br>
                       <button id="addworkout">Add Workout to your Routine</button> 
+                      <button id="editschedule">Edit Routine</button>
                     </div>
                   </div>
             </div>
 
             <br>
             
-            <div class="calendar">
+            <div id="calendar">
                 <table>
                     <tr>
                         <th>Monday</th>
@@ -364,11 +367,50 @@
                     </tr>
 
                 </table>
-
-               
-                <a id="popup" href='#'>Add to Google Calendar?</a>
+                
+                <br>
+                <div id="popup">Not sure if this plan works with your scedule? <a href='#'>Export to Google Calendar!</a></div>
+                
             </div>
 
+        <!--Start of Workout Page Content-->
+
+            <div id="legday" style="display:none;">
+                30 Min Leg Day
+            </div>
+            <div id="quadcrusher" style="display:none;">
+                45 minute quad crusher
+            </div>
+            <div id="bicepburner" style="display:none;">
+                30 minute Bicep Burner
+            </div>
+            <div id="upperbody" style="display:none;">
+                45 minute upper body burn
+            </div>
+            <div id="abshred" style="display:none;">
+                30 minute ab shred
+            </div>
+            <div id="sculptor" style="display:none;">
+                45 minute ab sculptor
+            </div>
+            <div id="powerwalk" style="display:none;">
+                30 minute power walk
+            </div>
+            <div id="cardio" style="display:none;">
+                45 minute cardio
+            </div>
+            <div id="hiit" style="display:none;">
+                30 minute hiit
+            </div>
+            <div id="glutes" style="display:none;">
+                15 minute glutes
+            </div>
+
+
+        <!--Start of Goal Page Content-->
+        <div id="goalPage" style="display:none;">
+            GOALS!
+        </div>
 
 
     </body>
