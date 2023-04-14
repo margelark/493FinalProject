@@ -166,8 +166,8 @@ $(document).ready( function() {
     
     // completing
     function compClick() {
-        if (confirm("Have you completed the goal?")) {
-            alert("Congradulations on completing your goal!");
+        if (confirm("Have you completed this goal?")) {
+            alert("Congratulations on completing your goal!");
             return true;
         }
         return false;
