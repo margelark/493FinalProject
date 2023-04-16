@@ -13,7 +13,7 @@
                 <button id="dropbtn"><img src="bars.png" width="40px" height="35px" id="bars"></button>
                 <div id="menu" class="dropdown-content">
                     <div id="Home" class="btn">Home</div>
-                    <div id="Schedule" class="btn" onclick="changepage('schedule')">Schedule</div>
+                    <div id="Schedule" class="btn">Schedule</div>
                     <div id="Goal" class="btn">Goals</div>
                     <!--<div id="Workouts">Workouts</div>-->
                 </div>
@@ -42,7 +42,7 @@
                     </div>
                     <div class="welcome">
                         <span id="welcome_msg" style="font-size:30px;">Welcome to MoveMore</span><span>!</span>
-                        <p style="font-size: 15px;">Our mission is to make exercise easy! Add workouts to our built in schedule or add to your Google Calendar. Either way, our goal is to find a way to integrate exercise into your life without having to plan it!</p>
+                        <p style="font-size: 15px;">Our mission is to make exercise easy! Create your routine with our built in schedule or add individual workouts to your Google Calendar. Either way, our goal is to find a way to integrate exercise into your life without having to plan it!</p>
 
                         <p>Upcoming this week:</p>
                             <table id="homeTable">
@@ -80,8 +80,7 @@
                 <div class="ColTwo"> <div class="trythis">Find your Perfect Routine: </div>
                     <div class="workout_list">
                         <div id="random" class="random btn">
-                            <p>Generate a Random Workout Routine</p>
-                            
+                            <p>Generate a Random Workout</p>
                         </div>
                         <div class="workout_label">
                             <a href="30cardio.html" target="_blank" class="workout_label">
@@ -157,8 +156,18 @@
         <div id="schedule" style="padding-top: 125px">
             <div id="makeschedule">
                 <div class='enterFrequency'>
-                    <h3>Add <span id='workoutName'>Workout</span> to your Calendar</h3>
-                    <p>Workout duration: <span id='duration'>30</span> minutes</p>
+                    <h3>Add <select id="selectWorkout">
+                        <option value="30 Minute Power Walk">30 Minute Power Walk</option>
+                        <option value="30 Minute HIIT">30 Minute HIIT</option>
+                        <option value="30 Minute Ab Shredder">30 Minute Ab Shredder</option>
+                        <option value="30 Minute Bicep Burner">30 Minute Bicep Burner</option>
+                        <option value="45 Minute 6-pack Sculptor">45 Minute 6-pack Sculptor</option>
+                        <option value="45 Minute Cardio">45 Minute Cardio</option>
+                        <option value="45 Minute Upper Body">45 Minute Upper Body</option>
+                        <option value="30 Minute Leg Day">30 Minute Leg Day</option>
+                        <option value="45 Minute Quad Crusher">45 Minute Quad Crusher</option>
+                        <option value="15 Minute Glute Burn">15 Minute Glute Burn</option>
+                    </select> to your Calendar</h3>
                     
                     <div id="days">
                       <p>Choose a Date and Time: </p>
@@ -328,7 +337,6 @@
                       <br>
                       <br>
                       <button id="addworkout">Add Workout to your Routine</button> 
-                      <button id="editschedule">Edit Routine</button>
                     </div>
                   </div>
             </div>
@@ -339,37 +347,37 @@
                 <table>
                     <tr>
                         <th>Monday</th>
-                        <td id="1"></td>
+                        <td id="1">Nothing yet!</td>
                     </tr>
                     <tr>
                         <th>Tuesday</th>
-                        <td id="2"></td>
+                        <td id="2">Nothing yet!</td>
                     </tr>
                     <tr>
                         <th>Wednesday</th>
-                        <td id="3"></td>
+                        <td id="3">Nothing yet!</td>
                     </tr>
                     <tr>
                         <th>Thursday</th>
-                        <td id="4"></td>
+                        <td id="4">Nothing yet!</td>
                     </tr>
                     <tr>
                         <th>Friday</th>
-                        <td id="5"></td>
+                        <td id="5">Nothing yet!</td>
                     </tr>
                     <tr>
                         <th>Saturday</th>
-                        <td id="6"></td>
+                        <td id="6">Nothing yet!</td>
                     </tr>
                     <tr>
                         <th>Sunday</th>
-                        <td id="0"></td>
+                        <td id="0">Nothing yet!</td>
                     </tr>
 
                 </table>
                 
                 <br>
-                <div id="popup">Not sure if this plan works with your scedule? <a href='#'>Export to Google Calendar!</a></div>
+                
                 
             </div>
         </div>
