@@ -1,6 +1,7 @@
 let name = "";
 let streak = 0;
 
+
 let workoutTitle = "Workout";
 let Day = "1";
 let Month = "0";
@@ -75,6 +76,7 @@ $(document).ready( function() {
         document.getElementById('schedule').style.display= 'none';
         document.getElementById('scroll').style.display='none';
         document.getElementById('goalPage').style.display='block';
+        console.log("Done");
 
     })
 
@@ -99,6 +101,7 @@ $(document).ready( function() {
         Day = $("#day").val();
         Year = $("#year").val();
         Time = $("#time").val();
+        workoutTitle = $("#selectWorkout").val();
 
         console.log(Year);
         console.log(Month);
@@ -109,10 +112,18 @@ $(document).ready( function() {
         weekday = workoutDay.getDay();
         console.log(weekday);
 
-        document.getElementById(weekday).innerHTML = Time + " " + workoutTitle;
+        document.getElementById(weekday).innerHTML = "<div id='" + weekday + "'>" + Time + " " + workoutTitle + "     " + "<button id='removeWorkout" + weekday + "'>&#10005</button></div>";
         document.getElementById(weekday + 'a').innerHTML = Time + " " + workoutTitle;
-        
-        document.getElementById('popup').style.visibility = 'visible';
+
+        maintainSchedule(weekday);
+    }
+
+    //remove schedule objects
+    function maintainSchedule(weekday) {
+        document.getElementById('removeWorkout' + weekday).addEventListener("click", function(){
+            document.getElementById(weekday).innerHTML = "Nothing yet!";
+            document.getElementById(weekday + 'a').innerHTML = "Nothing yet!"
+        })
     }
 
     // maintaining goals
@@ -166,8 +177,8 @@ $(document).ready( function() {
     
     // completing
     function compClick() {
-        if (confirm("Have you completed this goal?")) {
-            alert("Congratulations on completing your goal!");
+        if (confirm("Have you completed the goal?")) {
+            alert("Congradulations on completing your goal!");
             return true;
         }
         return false;

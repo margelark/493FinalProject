@@ -369,10 +369,6 @@ td {
     text-align: center;
     display: none;
   }
-
-  #popup {
-    visibility: hidden;
-  }
   
   #homeTR {
     font-size: 25px;
